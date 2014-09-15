@@ -1,0 +1,83 @@
+*{
+    /* Universal reset: */
+    margin:0;
+    padding:0;
+}
+
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+    /* Giving a display value to the HTML5 rendered elements: */
+    display:block;
+}
+
+body{
+    /* Setting the default text color, size, page background and a font stack: */
+    font-size:0.825em;
+    color:#fcfcfc;
+    background-color:#999999;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background:url(img/gradient_light.jpg) repeat-x 50% 50% #f8f8f8;
+    padding:0 5px;
+    position:absolute;
+    right:0;
+    top:4em;
+    
+    border:1px solid #FCFCFC;
+
+    -moz-box-shadow:0 1px 1px #333333;
+    -webkit-box-shadow:0 1px 1px #333333;
+    box-shadow:0 1px 1px #333333;
+}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* The navigation styling: */
+
+nav ul li{
+    display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+    color:#565656;
+    display:block;
+    float:left;
+    font-size:1.25em;
+    font-weight:bold;
+    margin:5px 2px;
+    padding:7px 10px 4px;
+    text-shadow:0 1px 1px white;
+    text-transform:uppercase;
+}
+
+nav ul li a:hover{
+    text-decoration:none;
+    background-color:#f0f0f0;
+}
+
+nav, article, nav ul li a,figure{
+    /* Applying CSS3 rounded corners: */
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+
+.maincol {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
